@@ -4,7 +4,7 @@ services:
         image: 'postgres:latest'
         restart: always
         volumes:
-        - './postgres_data:/var/lib/postgresql/data'
+        - '../database/postgres_data:/var/lib/postgresql/data'
         environment:
         - POSTGRES_PASSWORD=secure_pass_here
         ports:
